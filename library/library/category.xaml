@@ -1,0 +1,28 @@
+﻿<Page x:Class="library.category"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:library"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="category">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content=" search" Width="100" Height="30" VerticalAlignment="Top" Margin="75,111,75,0" Click="Button_Click"/>
+        <TextBlock Text="Search:" Margin="10,49,198,97"/>
+        <TextBox Name="stxt"  HorizontalAlignment="Left" Height="29" Margin="70,49,0,0" VerticalAlignment="Top" Width="116"/>
+        <DataGrid Name="dg" Grid.Column="1" Grid.RowSpan="2">
+
+        </DataGrid>
+    </Grid>
+</Page>
